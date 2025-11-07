@@ -1,0 +1,269 @@
+- {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+body {
+font-family: ‘Segoe UI’, Tahoma, Geneva, Verdana, sans-serif;
+background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+min-height: 100vh;
+padding: 20px;
+}
+
+.container {
+max-width: 1400px;
+margin: 0 auto;
+background: white;
+border-radius: 20px;
+box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+overflow: hidden;
+}
+
+.header {
+background: linear-gradient(135deg, #4285f4 0%, #34a853 100%);
+color: white;
+padding: 40px;
+text-align: center;
+}
+
+.header h1 {
+font-size: 2.5em;
+margin-bottom: 10px;
+}
+
+.header p {
+font-size: 1.1em;
+opacity: 0.9;
+}
+
+.content {
+padding: 40px;
+}
+
+.section {
+margin-bottom: 40px;
+}
+
+.section-title {
+font-size: 1.8em;
+color: #333;
+margin-bottom: 20px;
+padding-bottom: 10px;
+border-bottom: 3px solid #4285f4;
+}
+
+.form-group {
+margin-bottom: 25px;
+}
+
+label {
+display: block;
+font-weight: 600;
+color: #555;
+margin-bottom: 8px;
+font-size: 1.1em;
+}
+
+input, select, textarea {
+width: 100%;
+padding: 12px;
+border: 2px solid #e0e0e0;
+border-radius: 8px;
+font-size: 1em;
+transition: border-color 0.3s;
+}
+
+input:focus, select:focus, textarea:focus {
+outline: none;
+border-color: #4285f4;
+}
+
+.service-grid {
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+gap: 15px;
+margin-top: 15px;
+}
+
+.service-card {
+background: #f8f9fa;
+padding: 15px;
+border-radius: 10px;
+border: 2px solid transparent;
+cursor: pointer;
+transition: all 0.3s;
+}
+
+.service-card:hover {
+transform: translateY(-2px);
+box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.service-card.selected {
+background: #e8f0fe;
+border-color: #4285f4;
+}
+
+.service-card input[type=“checkbox”] {
+width: auto;
+margin-right: 10px;
+}
+
+.service-name {
+font-weight: 600;
+color: #333;
+}
+
+.resource-input {
+margin-top: 20px;
+padding: 20px;
+background: #f8f9fa;
+border-radius: 10px;
+}
+
+.resource-input h3 {
+margin-bottom: 15px;
+color: #4285f4;
+}
+
+.resource-row {
+display: grid;
+grid-template-columns: 200px 1fr 100px;
+gap: 15px;
+margin-bottom: 15px;
+align-items: center;
+}
+
+.btn {
+padding: 15px 40px;
+border: none;
+border-radius: 8px;
+font-size: 1.1em;
+font-weight: 600;
+cursor: pointer;
+transition: all 0.3s;
+}
+
+.btn-primary {
+background: linear-gradient(135deg, #4285f4 0%, #34a853 100%);
+color: white;
+}
+
+.btn-primary:hover {
+transform: translateY(-2px);
+box-shadow: 0 5px 15px rgba(66, 133, 244, 0.4);
+}
+
+.btn-secondary {
+background: #6c757d;
+color: white;
+}
+
+.btn-secondary:hover {
+background: #5a6268;
+}
+
+.btn-remove {
+background: #dc3545;
+color: white;
+padding: 8px 15px;
+font-size: 0.9em;
+}
+
+.recommendations {
+margin-top: 40px;
+padding: 30px;
+background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+border-radius: 15px;
+}
+
+.recommendation-card {
+background: white;
+padding: 25px;
+border-radius: 10px;
+margin-bottom: 20px;
+border-left: 5px solid #4285f4;
+box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.recommendation-card h3 {
+color: #4285f4;
+margin-bottom: 15px;
+font-size: 1.5em;
+}
+
+.recommendation-list {
+list-style: none;
+}
+
+.recommendation-list li {
+padding: 12px;
+margin-bottom: 10px;
+background: #f8f9fa;
+border-radius: 6px;
+display: flex;
+align-items: start;
+}
+
+.recommendation-list li::before {
+content: “💡”;
+margin-right: 12px;
+font-size: 1.2em;
+}
+
+.savings-badge {
+display: inline-block;
+background: #34a853;
+color: white;
+padding: 5px 12px;
+border-radius: 20px;
+font-size: 0.9em;
+font-weight: 600;
+margin-left: 10px;
+}
+
+.priority-high {
+border-left-color: #dc3545;
+}
+
+.priority-medium {
+border-left-color: #ffc107;
+}
+
+.priority-low {
+border-left-color: #28a745;
+}
+
+.hidden {
+display: none;
+}
+
+.loading {
+text-align: center;
+padding: 40px;
+font-size: 1.2em;
+color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+.header h1 {
+font-size: 1.8em;
+}
+
+```
+.service-grid {
+    grid-template-columns: 1fr;
+}
+
+.resource-row {
+    grid-template-columns: 1fr;
+}
+
+.content {
+    padding: 20px;
+}
+```
+
+}
